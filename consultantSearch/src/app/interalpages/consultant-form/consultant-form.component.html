@@ -1,0 +1,28 @@
+<div class="container">
+    <form #form="ngForm">
+        <div class="form-floating">
+            <input id="floatingName" name="name" class="form-control" placeholder="First Name">
+            <label for="floatingName">First Name</label>
+        </div>
+        <div class="form-floating">
+            <input id="floatingName" name="name" class="form-control" placeholder="Last Name">
+            <label for="floatingName">Last Name</label>
+        </div>
+        <div>
+            <input id="relocation" name="relocation" class="form-check-input" type="checkbox">
+            <label for="relocation">Willing to Relocate?</label>
+        </div>
+        <div class="form-map" style="max-width:200px;">
+            <app-usamap></app-usamap>
+        </div>
+        <div class="form-floating">
+            <input id="floatingWebsite" name="website" class="form-control" placeholder="Website" type="url">
+            <label for="floatingWebsite">Website</label>
+        </div>
+        <div>
+            <button class="btn btn-success">Submit</button>
+        </div>
+    </form>
+</div>
+
+{{ form | json }}
